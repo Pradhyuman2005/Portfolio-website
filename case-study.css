@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //border: 1px solid red;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header {
+  padding: 1.5em;
+  background-color: black;
+  color: white;
+}
+
+.no-bold {
+  font-weight: 360;
+}
+
+#intro-page {
+  margin-top: 3em;
+}
+
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.overview-vid {
+  flex: 1;
+  max-width: 60rem;
+}
+
+.project-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.landing-texts {
+  flex: 1;
+  max-width: 28rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.landing-texts p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.landing-texts a {
+  display: inline-block;
+  width: fit-content;
+  background: black;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 8vh;
+}
+
+.quote {
+  width: 5rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.me {
+  max-width: 45rem;
+  font-size: 1.5rem;
+}
+
+.me p {
+  margin-top: 1.25rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.menu {
+  display: none;
+  gap: 3em;
+  margin-top: 5em;
+  padding: 0.5em 1.3em;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  border-radius: 2em;
+  top:76%;
+  right:26%;
+}
+
+.menu a{
+  font-size: 1.4rem;
+  color: #ffffff;
+  transition: 0.8s;
+  padding: 10px;
+  border-radius: .7em;
+}
+
+.menu a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#research {
+  margin-top: 5em;
+}
+
+.audience h1{
+  font-size: 4rem;
+  background-color: #000000;
+  color: white;
+}
+
+.target-text {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  font-size: 2rem;
+}
+
+.tech {
+  border: 3px solid black;
+  border-radius: 100px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+
+.takeaways {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.takeaways p {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: .5%;
+  line-height: 1.5;
+}
+
+.visual-casestudy {
+  margin-top: 6rem;
+  
+}
+
+.case-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ideation-div {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  flex-wrap: wrap;
+}
+
+.ideation-div img {
+  max-width: 100%;
+  height: auto;
+}
+
+#ideation h1{
+  font-size: 4rem;
+  background-color: #000000;
+  color: white;
+}
+
+#mockups h1{
+  font-size: 4rem;
+  background-color: #000000;
+  color: white;
+}
+
+/* RESPONSIVE */
+/* Small phones (older / compact) */
+@media (max-width: 360px) {
+  .landing-texts p {
+    font-size: 1rem;
+  }
+
+  .landing-texts a {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+
+/* Standard phones (most devices) */
+@media (max-width: 480px) {
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .overview-vid {
+    max-width: 100%;
+  }
+
+  .landing-texts {
+    align-items: center;
+    max-width: 100%;
+    gap: 1.2rem;
+  }
+
+  .landing-texts p {
+    font-size: 1.1rem;
+  }
+
+  .landing-texts a {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+
+/* Large phones (iPhone Pro Max, etc.) */
+@media (max-width: 600px) {
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-texts {
+    align-items: center;
+  }
+}
