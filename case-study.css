@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 a {
@@ -24,8 +25,33 @@ header {
   color: white;
 }
 
+header h1{
+  font-size: clamp(0.9rem, 3vw, 1.8rem);
+}
+
 .no-bold {
   font-weight: 360;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sidebar-active{
+  display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+  display: none;
 }
 
 #intro-page {
@@ -104,15 +130,16 @@ header {
 }
 
 .menu {
-  display: none;
+  display: flex;
   gap: 3em;
+  justify-content: space-evenly;
   margin-top: 5em;
   padding: 0.5em 1.3em;
   background-color: rgb(0, 0, 0);
   position: fixed;
-  border-radius: 2em;
+  border-radius: 1.2em;
   top:76%;
-  right:26%;
+  right:25%;
 }
 
 .menu a{
@@ -121,6 +148,8 @@ header {
   transition: 0.8s;
   padding: 10px;
   border-radius: .7em;
+  margin-left: 1.1em;
+  margin-right: 1.1em;
 }
 
 .menu a:hover {
@@ -170,19 +199,25 @@ header {
 
 .visual-casestudy {
   margin-top: 6rem;
-  
 }
 
 .case-img {
   max-width: 100%;
   height: auto;
+  border: 3px solid black;
+  margin-top: 6em;
+}
+
+#ideation {
+  margin-top: 4em;
 }
 
 .ideation-div {
   display: flex;
   justify-content: center;
-  gap: 4%;
   flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.1em;
 }
 
 .ideation-div img {
@@ -196,64 +231,407 @@ header {
   color: white;
 }
 
+.planning-title h2{
+  margin-top: 3em;
+  margin-bottom: 0.6em;
+}
+
+.wireframes {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wireframes img {
+  border: 3px solid black;
+  max-width: 100%;
+  height: auto;
+}
+
+.wire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #mockups h1{
   font-size: 4rem;
   background-color: #000000;
   color: white;
 }
 
+.hi-fi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.hi-fi img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.6em;
+}
+
+#mockups {
+  margin-top: 6em;
+}
+
+#mockups a {
+  display: inline-block;
+  width: fit-content;
+  background: black;
+  color: white;
+  margin-top: 0.6em;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.5rem;
+  font-size: 2.8rem;
+}
+
+#mockups p {
+  text-align: left;
+  line-height: 1.8;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  line-height: 1.7;
+}
+
+#development {
+  margin-top: 7em;
+}
+
+#development h1{
+  font-size: 4rem;
+  background-color: #000000;
+  color: white;
+}
+
+#development img {
+  border: 3px solid black;
+  margin-top: 2%;
+  margin: 1%;
+}
+
+.dev-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-imgs img {
+  max-width: 100%;
+  height: auto;
+}
+
+#impact {
+  margin-top: 7em;
+  max-width: 100%;
+  height: auto;
+}
+
+#impact h1{
+  font-size: 4rem;
+  background-color: #000000;
+  color: white;
+}
+
+#impact p{
+  margin-top: 2em;
+  line-height: 1.7;
+}
+
+#references{
+  margin-top: 4em;
+}
+
+#references p{
+  font-size: 1rem;
+  margin-top: 1.1em;
+}
+
+footer {
+  padding: 1.5em;
+  background-color: black;
+  color: white;
+  margin-top: 4em;
+  padding-bottom: 9em;
+}
+
 /* RESPONSIVE */
-/* Small phones (older / compact) */
-@media (max-width: 360px) {
-  .landing-texts p {
-    font-size: 1rem;
+
+/*for nav bar*/
+@media (max-width: 1091px) {
+  .links-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 300px;
+    background-color: #000000;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   }
 
-  .landing-texts a {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
+  .menu {
+    top: 8%;
+    right: 3%;
+    margin: 0;
+    gap: 0;
+  }
+
+  .menu a {
+    font-size: 2.5em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 0.7vw;
+    display: block;
+  }
+
+  #sidebar-active:checked ~ .links-container {
+    display: flex;
   }
 }
 
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
 
-/* Standard phones (most devices) */
-@media (max-width: 480px) {
+  .dev-imgs {
+    flex-direction: column;
+  }
+}
+
+/* ── Mobile L (426px) ── */
+@media (max-width: 426px) {
+  p {
+    font-size: 1rem;
+  }
+
+  header, footer {
+    padding: 1em 0.8em;
+    font-size: 0.7rem;
+  }
+
+  footer {
+    padding-bottom: 3em;
+  }
+
+  #intro-page {
+    margin-top: 1.5em;
+  }
+
   .landing-page {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-    padding: 1.5rem;
-  }
-
-  .overview-vid {
-    max-width: 100%;
+    padding: 1rem;
   }
 
   .landing-texts {
     align-items: center;
     max-width: 100%;
-    gap: 1.2rem;
-  }
-
-  .landing-texts p {
-    font-size: 1.1rem;
+    gap: 1rem;
   }
 
   .landing-texts a {
     font-size: 1rem;
-    padding: 0.7rem 1.4rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3vh;
+    padding: 0 1rem;
+  }
+
+  .me {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .me p {
+    font-size: 1rem;
+  }
+
+  .audience h1,
+  #ideation h1,
+  #mockups h1,
+  #development h1,
+  #impact h1 {
+    font-size: 2rem;
+  }
+
+  .target-text {
+    font-size: 1.3rem;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .tech {
+    width: 110px;
+    height: 110px;
+  }
+
+  .takeaways p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1rem;
+  }
+
+  .case-img {
+    width: 95%;
+    margin-top: 2em;
+  }
+
+  #ideation {
+    margin-top: 2em;
+  }
+
+  .ideation-div {
+    align-items: center;
+    gap: 0.8em;
+    padding: 0 0.5rem;
+  }
+
+  .wireframes {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0 0.5rem;
+  }
+
+  .planning-title h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5em;
+  }
+
+  #mockups {
+    margin-top: 3em;
+  }
+
+  .hi-fi {
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+
+  #mockups a {
+    font-size: 1.6rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  #mockups p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1rem;
+  }
+
+  #development {
+    margin-top: 3em;
+  }
+
+  .dev-imgs {
+    padding: 0 0.5rem;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  #impact {
+    margin-top: 3em;
+  }
+
+  #impact p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1rem;
+  }
+
+  #references {
+    margin-top: 2em;
+  }
+
+  #references p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
 }
 
+/* ── Mobile M (376px) ── */
+@media (max-width: 376px) {
 
-/* Large phones (iPhone Pro Max, etc.) */
-@media (max-width: 600px) {
-  .landing-page {
-    flex-direction: column;
-    text-align: center;
+  .tech {
+    width: 105px;
+    height: 105px;
+  }
+
+  .landing-texts p {
+    font-size: 1rem;
+  }
+
+  .menu a {
+    font-size: 2rem;
+  }
+
+  .quote {
+    display: none;
+  }
+}
+
+/* ── Mobile S (320px) ── */
+@media (max-width: 320px) {
+
+  header, footer {
+    font-size: 0.6rem;
   }
 
   .landing-texts {
-    align-items: center;
+    text-align: left;
+  }
+
+  .tech {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hi-fi img {
+    margin: 0.4em 0;
+  }
+
+  #development img {
+    margin: 0.5em 0;
+  }
+
+  .menu a {
+    font-size: 2rem;
+    padding: 6px;
   }
 }
