@@ -2,13 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  //border: 1px solid red;
 }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  overflow-x: hidden;
 }
 
 a {
@@ -26,7 +24,7 @@ header {
 }
 
 header h1{
-  font-size: clamp(0.9rem, 3vw, 1.8rem);
+  font-size: clamp(2rem, 3vw, 3rem);
 }
 
 .no-bold {
@@ -362,18 +360,19 @@ footer {
 /* RESPONSIVE */
 
 /*for nav bar*/
-@media (max-width: 1091px) {
+@media (max-width: 1025px) {
+
   .links-container {
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     z-index: 10;
     width: 300px;
     background-color: #000000;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
   }
 
   .menu {
@@ -387,6 +386,8 @@ footer {
     font-size: 2.5em;
     margin-left: 0;
     margin-right: 0;
+    border-radius: 0;
+    margin-top: 0;
   }
 
   nav a {
@@ -404,12 +405,27 @@ footer {
   }
 
   #sidebar-active:checked ~ .links-container {
-    display: flex;
+    right: 0;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    background-color: #000000;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+  }  
+
+  .quote {
+    z-index: -1;
   }
 }
 
 /* ── Tablet ── */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .landing-page {
     flex-direction: column;
     gap: 1.5rem;
@@ -418,6 +434,10 @@ footer {
 
   .dev-imgs {
     flex-direction: column;
+  }
+
+  .menu a {
+    margin-top: 0;
   }
 }
 

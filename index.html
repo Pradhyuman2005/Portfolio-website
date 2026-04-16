@@ -13,9 +13,18 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            
+            <label id="overlay" for="sidebar-active"></label>
+            <ul class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
                 <li class="nav-bar">
-                    <a>Home</a>
+                    <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
@@ -27,7 +36,7 @@
     <main>
         <section ID="home">
             <div class="intro-page">
-                <img class="img-1" src="Images/image-1.jpg" alt="Pradhyuman's Photo">
+                <img class="img-1" src="Images/image-1.jpg" alt="Pradhyuman's Photo" width="400px">
                 <div class="home-para">
                     <h1>Front-End React Developer + UI/<br> UX Designer :)</h1>
                     <p>Hi, I’m Pradhyuman. A Front-End React & UI/UX developer based in<br> Perth, Australia.</p>
