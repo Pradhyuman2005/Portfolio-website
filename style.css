@@ -91,20 +91,13 @@ h2 {
     font-size: clamp(0.5rem, calc(1vw + 1rem), 4rem);
 }
 
-.svg-wrapper {
-  position: relative;
-  width: 100%;
-}
-
 .smily {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4.5vw;
-  min-width: 25px;
-  max-width: 53px;
-  height: auto;
-  transform: translate(-110%, -150%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: auto;
+    margin-left: 0.3em;
+    position: static; /* remove any leftover absolute positioning */
 }
 
 .smily path {
@@ -181,7 +174,12 @@ h2 {
 }
 
 .home-para h1 {
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    margin-right: 15%;
+}
+
+.home-para p {
+    margin-right: 35%;
 }
 
 .img-1 {
@@ -190,6 +188,7 @@ h2 {
     max-width: 100%;
     height: auto;
     animation: slideUp 0.75s ease forwards;
+    margin-left: 5%;
 }
 
 @keyframes slideUp {
@@ -491,28 +490,23 @@ footer svg {
     background-color: white;
     color: black;
 }
+/*Edit Smily nicely*/
 
 /* For 4K */
 @media (max-width: 2561px) {
-    .smily {
-        top: 50%;
-        left: 46%;
-        transform: translate(-110%, -190%);
-        width: 7vw;
+    .img-1 {
+        margin-left: 21em;
     }
 }
 
 /*For Smily */
 @media (max-width: 1543px) {
-    .smily {
-        transform: translate(-80%, -170%);
+    .img-1 {
+        margin-left: 8em;
     }
 }
 
 @media (max-width: 1289px) {
-    .smily {
-        transform: translate(-60%, -140%);
-    }
 }
 
 @media (max-width: 1025px) {
@@ -524,27 +518,26 @@ footer svg {
         margin-top: 16.5vh;
     }
 
-    .smily {
-        transform: translate(-30%, -140%);
+    
+    .img-1 {
+        margin-left: 5em;
     }
 }
 
 @media (max-width: 863px) {
-    .smily {
-        transform: translate(40%, -140%);
+
+    .img-1 {
+        width: 33vw;
     }
 }
 
 /*For Tablet (768px)*/
 @media (max-width: 769px) {
     header a {
-        font-size: 2em;
+        font-size: 1.4em;
         margin: 1.4%;
     }
 
-    .smily {
-        transform: translate(60%, -110%);
-    }
 }
 
 @media (max-width: 706px) {
@@ -554,16 +547,38 @@ footer svg {
     .home-para h1 {
         margin-top: 0.5em;
     }
-    .smily {
-        transform: translate(-60%, -140%);
+    .home-para {
+        margin-left: 6em;
     }
+    .home-para p{
+        margin-right: 3em;
+    }
+    .img-1 {
+        width: 50vw;
+    }
+}
+
+/*For portfolio selection*/
+@media (max-width: 528px) {
+    .intro-page{
+        margin-top: 6vh;
+    }
+
+    .img-1 {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        width: 60vw;
+    }
+
+    .modes {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+  }
 }
 
 /* Fixing other layout */
 @media (max-width: 500px) {
-    .smily {
-        transform: translate(-10%, -190%);
-    }
 
     .quote {
         display: none;
@@ -619,21 +634,18 @@ footer svg {
         border-radius: 0;
         text-align: left;
     }
+    .img-1 {
+        margin-left: 0em;
+    }
+    .home-para{
+        margin-left: 3.3em;
+    }
 }
 
 @media (max-width: 440px) {
     img-1 {
         width: 25vw;
     }
-}
-
-/*For portfolio selection*/
-@media (max-width: 528px) {
-    .modes {
-        flex-direction: column;
-        gap: 1rem;
-        margin-right: 0;
-  }
 }
 
 /* Mobile M (375px) */
@@ -646,16 +658,8 @@ footer svg {
     margin-top: 8vh;
   }
 
-  .img-1 {
-    width: 80%;
-  }
-
-  .smily {
-        transform: translate(320%, -170%);
-    }
-
   .home-para {
-    margin-left: 0;
+    margin-left: 2em;
     padding: 0 1rem;
     text-align: center;
   }
@@ -720,10 +724,6 @@ footer svg {
 
   .home-para h1 {
     font-size: 1.3rem;
-  }
-
-  .img-1 {
-    width: 90%;
   }
 
   .project-text,
