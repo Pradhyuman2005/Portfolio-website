@@ -101,58 +101,58 @@ h2 {
 }
 
 .smily path {
-  animation: draw 2s linear infinite;
-  opacity: 0;
+    animation: draw 2s linear infinite;
+    opacity: 0;
 }
 
 .smily path:nth-child(1) {
-  stroke-dasharray: 45;
-  stroke-dashoffset: 45;
-  animation-name: draw1;
+    stroke-dasharray: 45;
+    stroke-dashoffset: 45;
+    animation-name: draw1;
 }
 
 .smily path:nth-child(2) {
-  stroke-dasharray: 38;
-  stroke-dashoffset: 38;
-  animation-name: draw2;
+    stroke-dasharray: 38;
+    stroke-dashoffset: 38;
+    animation-name: draw2;
 }
 
 .smily path:nth-child(3) {
-  stroke-dasharray: 120;
-  stroke-dashoffset: 120;
-  animation-name: draw3;
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation-name: draw3;
 }
 
 /* Path 1 draws first: 0-25% */
 @keyframes draw1 {
-  0%        { stroke-dashoffset: 45; opacity: 0; }
-  5%        { opacity: 1; }
-  25%       { stroke-dashoffset: 0; opacity: 1; }
-  75%       { stroke-dashoffset: 0; opacity: 1; }
-  90%       { stroke-dashoffset: 0; opacity: 0; }
-  100%      { stroke-dashoffset: 45; opacity: 0; }
+    0%        { stroke-dashoffset: 45; opacity: 0; }
+    5%        { opacity: 1; }
+    25%       { stroke-dashoffset: 0; opacity: 1; }
+    75%       { stroke-dashoffset: 0; opacity: 1; }
+    90%       { stroke-dashoffset: 0; opacity: 0; }
+    100%      { stroke-dashoffset: 45; opacity: 0; }
 }
 
 /* Path 2 draws second: 15-40% */
 @keyframes draw2 {
-  0%        { stroke-dashoffset: 38; opacity: 0; }
-  15%       { stroke-dashoffset: 38; opacity: 0; }
-  20%       { opacity: 1; }
-  40%       { stroke-dashoffset: 0; opacity: 1; }
-  75%       { stroke-dashoffset: 0; opacity: 1; }
-  90%       { stroke-dashoffset: 0; opacity: 0; }
-  100%      { stroke-dashoffset: 38; opacity: 0; }
+    0%        { stroke-dashoffset: 38; opacity: 0; }
+    15%       { stroke-dashoffset: 38; opacity: 0; }
+    20%       { opacity: 1; }
+    40%       { stroke-dashoffset: 0; opacity: 1; }
+    75%       { stroke-dashoffset: 0; opacity: 1; }
+    90%       { stroke-dashoffset: 0; opacity: 0; }
+    100%      { stroke-dashoffset: 38; opacity: 0; }
 }
 
 /* Path 3 draws last: 30-65% */
 @keyframes draw3 {
-  0%        { stroke-dashoffset: 120; opacity: 0; }
-  30%       { stroke-dashoffset: 120; opacity: 0; }
-  35%       { opacity: 1; }
-  65%       { stroke-dashoffset: 0; opacity: 1; }
-  75%       { stroke-dashoffset: 0; opacity: 1; }
-  90%       { stroke-dashoffset: 0; opacity: 0; }
-  100%      { stroke-dashoffset: 120; opacity: 0; }
+    0%        { stroke-dashoffset: 120; opacity: 0; }
+    30%       { stroke-dashoffset: 120; opacity: 0; }
+    35%       { opacity: 1; }
+    65%       { stroke-dashoffset: 0; opacity: 1; }
+    75%       { stroke-dashoffset: 0; opacity: 1; }
+    90%       { stroke-dashoffset: 0; opacity: 0; }
+    100%      { stroke-dashoffset: 120; opacity: 0; }
 }
 
 .home-para {
@@ -490,7 +490,6 @@ footer svg {
     background-color: white;
     color: black;
 }
-/*Edit Smily nicely*/
 
 /* For 4K */
 @media (max-width: 2561px) {
@@ -536,6 +535,9 @@ footer svg {
     header a {
         font-size: 1.4em;
         margin: 1.4%;
+    }
+    .cursor {
+        display: none;
     }
 
 }
