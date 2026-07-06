@@ -316,7 +316,6 @@ input:checked + .slider::before {
     align-items: center;
     gap: 1.5rem;
     margin-top: 2.5vw;
-    margin-right: 4.4em;
 }
 
 .project-type {
@@ -325,7 +324,7 @@ input:checked + .slider::before {
 }
 
 .projects {
-    margin-top: 2em;
+    margin-top: 6em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,6 +468,10 @@ footer a {
     color: #fff;
     font-size: 1.3rem;
     text-decoration: none;
+}
+
+.web-projects {
+    flex-direction: column;
 }
 
 footer svg {
