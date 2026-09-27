@@ -23,6 +23,10 @@ header {
   color: white;
 }
 
+h1, h2 {
+  font-weight: 450;
+}
+
 header h1{
   font-size: clamp(2rem, 3vw, 3rem);
 }
@@ -469,7 +473,7 @@ footer {
   }
 
   .landing-texts {
-    align-items: center;
+    font-size: 0.7rem;
     max-width: 100%;
     gap: 1rem;
   }
@@ -606,7 +610,7 @@ footer {
   #references p {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 0.85rem;
+    font-size: 0.6rem;
     line-height: 1.6;
   }
 }
