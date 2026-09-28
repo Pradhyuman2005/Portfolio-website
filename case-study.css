@@ -207,7 +207,7 @@ nav{
 .case-img {
   max-width: 100%;
   height: auto;
-  border: 3px solid black;
+  border: 1px solid black;
   margin-top: 2.5em;
 }
 
@@ -247,7 +247,7 @@ nav{
 }
 
 .wireframes img {
-  border: 3px solid black;
+  border: 1px solid black;
   max-width: 100%;
   height: auto;
 }
