@@ -249,7 +249,7 @@ h2 {
     to {translate:-100%;}
 }
 
-#about {
+/* #about {
     margin-top: 29.5vh;
     padding: 9rem 1.5rem;
 }
@@ -259,7 +259,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-}
+} */
 
 .me {
   max-width: 45rem;
