@@ -5,6 +5,10 @@
     cursor: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
@@ -342,32 +346,51 @@ input:checked + .slider::before {
     margin-top: 0.2em;
 }
 
-.project-text {
-    margin-top: 0.5rem;
-}
-
-.project-text p {
-    margin-top: 1.2rem;
-    text-align: left;
+.project-card,
+.project-card:link,
+.project-card:visited,
+.project-card:hover,
+.project-card:active,
+.project-card:focus {
+    color: black;
+    text-decoration: none;
 }
 
 .title-dates h2:last-child {
     font-size: 1.5rem;
 }
 
-.project-text, .project-card {
+.project-card {
     width: calc(70% + 6em);
+}
+
+.project-card {
+    background-color: #F5F5F7;
+    border-radius: 1.5em;
+    transition: 0.5s ease;
+}
+
+.new-text {
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+.new-text p {
+    margin-top: 1.5%;
 }
 
 .project-thumb {
     border: 1px solid black;
-    width: 100%;
+    width: 95%;
+    margin-top: 3em;
     border-radius: 1.5em;
-    transition: 0.8s;
 }
 
-.project-thumb:hover {
-    scale: 102%;
+.project-card:hover {
+    scale: 101%;
 }
 
 #contact {
@@ -729,7 +752,6 @@ footer svg {
     margin-top: 10vh;
   }
 
-  .project-text,
   .project-card {
     width: 90%;
   }
@@ -764,7 +786,6 @@ footer svg {
     font-size: 1.3rem;
   }
 
-  .project-text,
   .project-card {
     width: 95%;
   }

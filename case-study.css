@@ -2,11 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
+}
+
+h1, h2 {
+  font-weight: 450;
 }
 
 a {
@@ -15,6 +24,22 @@ a {
 
 p {
   font-size: 1.5rem;
+  font-weight: 350;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(106, 106, 106, 0.6);
+  border-radius: 50%;
+  border: 1px solid white;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s linear;
 }
 
 header {
@@ -122,6 +147,9 @@ nav{
 
 .me {
   max-width: 45rem;
+}
+
+.me h1 {
   font-size: 1.5rem;
 }
 
@@ -129,6 +157,7 @@ nav{
   margin-top: 1.25rem;
   line-height: 1.6;
   text-align: left;
+  font-size: 3rem
 }
 
 .menu {
@@ -241,9 +270,13 @@ nav{
 
 .wireframes {
   display: flex;
-  gap: 2em;
+  gap: 4em;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.wire p {
+  width: 72%;
 }
 
 .wireframes img {
@@ -332,6 +365,11 @@ nav{
   margin-top: 7em;
   max-width: 100%;
   height: auto;
+}
+
+.final-solution {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #impact h1{
@@ -457,6 +495,11 @@ footer {
     font-size: 0.7rem;
   }
 
+  .final-solution {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
   footer {
     padding-bottom: 3em;
   }
@@ -490,14 +533,23 @@ footer {
     padding: 0 1rem;
   }
 
+  .wire p{
+    width:100%;
+  }
+
   .me {
     font-size: 1rem;
     max-width: 100%;
     padding: 0 0.5rem;
   }
 
-  .me p {
+  .me h1{
     font-size: 1rem;
+  }
+
+  .me p {
+    font-size: 2rem;
+    font-weight: 350;
   }
 
   .audience h1,

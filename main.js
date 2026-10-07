@@ -5,6 +5,27 @@ window.addEventListener('mousemove', (e) => {
     cursor.style.top = `${e.clientY}px`;
 });
 
+const sidebarToggle = document.getElementById('sidebar-active');
+
+document.querySelectorAll('.links-container a').forEach(link => {
+    link.addEventListener('click', () => {
+        sidebarToggle.checked = false;
+    });
+});
+
+document.querySelectorAll('.links-container a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        sidebarToggle.checked = false;
+    });
+});
+
 const toggle = document.querySelector('.switch input');
 const webProjects = document.querySelector('.web-projects');
 const uxProjects = document.querySelector('.ux-projects');
