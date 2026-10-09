@@ -475,6 +475,10 @@ footer {
     padding: 1rem;
   }
 
+  .cursor {
+        display: none;
+    }
+
   .dev-imgs {
     flex-direction: column;
   }
