@@ -85,6 +85,10 @@ nav{
   margin-top: 3em;
 }
 
+.quote, .rotate {
+  z-index: -1;
+}
+
 .landing-page {
   display: flex;
   align-items: center;
@@ -462,13 +466,13 @@ footer {
     z-index: 9;
   }  
 
-  .quote {
+  .quote, .rotate {
     z-index: -1;
   }
 }
 
 /* ── Tablet ── */
-@media (max-width: 769px) {
+@media (max-width: 863px) {
   .landing-page {
     flex-direction: column;
     gap: 1.5rem;
