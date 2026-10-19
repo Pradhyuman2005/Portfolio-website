@@ -582,17 +582,25 @@ footer svg {
     .intro-page {
         flex-direction: column;
     }
+
     .home-para h1 {
         margin-top: 0.5em;
     }
+
     .home-para {
         margin-left: 6em;
     }
+
     .home-para p{
         margin-right: 3em;
     }
+
     .img-1 {
         width: 50vw;
+    }
+
+    .new-text p {
+        font-size: 1rem;
     }
 }
 
@@ -600,6 +608,10 @@ footer svg {
 @media (max-width: 528px) {
     .intro-page{
         margin-top: 6vh;
+    }
+
+    .title-dates h2:last-child {
+        font-size: 1.2rem;
     }
 
     .img-1 {
@@ -617,6 +629,12 @@ footer svg {
 
 /* Fixing other layout */
 @media (max-width: 500px) {
+
+    .title-dates {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
 
     .quote {
         display: none;
@@ -700,13 +718,9 @@ footer svg {
     .project-thumb {
         border-radius: 0.8em;
     }
-
-    .title-dates h2:last-child {
-        font-size: 1.2rem;
-    }
 }
 
-/* Mobile M (375px) */
+/* Mobile M (376px) */
 @media (max-width: 376px) {
 
   /* Landing */
