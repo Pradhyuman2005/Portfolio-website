@@ -25,6 +25,7 @@ a {
 p {
   font-size: 1.5rem;
   font-weight: 350;
+  color: gray;
 }
 
 .cursor {
@@ -193,6 +194,10 @@ nav{
   color: #000000;
 }
 
+.no-bold {
+  color: gray;
+}
+
 #research {
   margin-top: 5em;
 }
@@ -240,8 +245,8 @@ nav{
 .case-img {
   max-width: 100%;
   height: auto;
-  border: 1px solid black;
   margin-top: 2.5em;
+  border-radius: 1em;
 }
 
 #ideation {
@@ -285,8 +290,10 @@ nav{
 
 .wireframes img {
   border: 1px solid black;
+  margin-top: 1em;
   max-width: 100%;
   height: auto;
+  border-radius: 1em;
 }
 
 .wire {
@@ -312,6 +319,7 @@ nav{
   max-width: 100%;
   height: auto;
   margin: 0.6em;
+  border-radius: 1em;
 }
 
 #mockups {
@@ -324,9 +332,9 @@ nav{
   background: black;
   color: white;
   margin-top: 0.6em;
-  padding: 0.8rem 1.8rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 1.5rem;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
 #mockups p {
@@ -349,9 +357,16 @@ nav{
 }
 
 #development img {
-  border: 3px solid black;
   margin-top: 2%;
   margin: 1%;
+}
+
+.trade-off {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .dev-imgs {
