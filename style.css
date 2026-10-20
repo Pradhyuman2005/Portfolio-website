@@ -73,7 +73,7 @@ header a {
     font-weight: 450;
     font-size: 2vw;
     border-radius: .5em;
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
 header a:hover {
