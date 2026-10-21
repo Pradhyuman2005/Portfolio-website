@@ -518,6 +518,14 @@ footer {
     font-size: 0.7rem;
   }
 
+  header h1{
+    font-size: 1rem;
+  }
+
+  .icons h2 {
+    font-size: 0.5rem;
+  }
+
   .final-solution {
     margin-left: 0%;
     margin-right: 0%;
@@ -539,7 +547,7 @@ footer {
   }
 
   .landing-texts {
-    font-size: 0.7rem;
+    font-size: 0.4rem;
     max-width: 100%;
     gap: 1rem;
   }
@@ -571,7 +579,7 @@ footer {
   }
 
   .me p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 350;
   }
 
@@ -598,10 +606,18 @@ footer {
     height: 110px;
   }
 
+  .takeaways, .visual-casestudy h2 {
+    font-size: 0.7rem;
+  }
+
   .takeaways p {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 1rem;
+    font-size: 0.6rem;
+  }
+
+  .visual-casestudy p {
+    font-size: 0.4rem;
   }
 
   .case-img {
