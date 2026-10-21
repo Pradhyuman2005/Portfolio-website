@@ -20,6 +20,16 @@ h1, h2 {
 
 a {
   text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  transition: 0.6s;
+}
+
+a:hover {
+  background-color: black;
 }
 
 p {
@@ -45,11 +55,10 @@ p {
 
 header {
   padding: 1.5em;
-  background-color: black;
-  color: white;
+  color: black;
 }
 
-h1, h2 {
+h1, h2, a {
   font-weight: 450;
 }
 
@@ -127,11 +136,15 @@ nav{
 .landing-texts a {
   display: inline-block;
   width: fit-content;
-  background: black;
-  color: white;
+  color: black;
+  border: 2px solid black;
   padding: 0.8rem 1.8rem;
   border-radius: 1.2rem;
   font-size: 1.2rem;
+}
+
+.landing-page a:hover {
+  color: white;
 }
 
 .about-row {
@@ -204,8 +217,6 @@ nav{
 
 .audience h1{
   font-size: 4rem;
-  background-color: #000000;
-  color: white;
 }
 
 .target-text {
@@ -215,7 +226,7 @@ nav{
 }
 
 .tech {
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 100px;
 }
 
@@ -268,8 +279,6 @@ nav{
 
 #ideation h1{
   font-size: 4rem;
-  background-color: #000000;
-  color: white;
 }
 
 .planning-title h2{
@@ -285,7 +294,7 @@ nav{
 }
 
 .wire p {
-  width: 72%;
+  width: 52%;
 }
 
 .wireframes img {
@@ -304,8 +313,6 @@ nav{
 
 #mockups h1{
   font-size: 4rem;
-  background-color: #000000;
-  color: white;
 }
 
 .hi-fi {
@@ -329,12 +336,12 @@ nav{
 #mockups a, #development a{
   display: inline-block;
   width: fit-content;
-  background: black;
-  color: white;
   margin-top: 0.6em;
-  padding: 0.4rem 0.9rem;
   border-radius: 1.5rem;
-  font-size: 2.2rem;
+}
+
+#mockups a:hover, #development a:hover {
+  color: white;
 }
 
 #mockups p {
@@ -352,8 +359,6 @@ nav{
 
 #development h1{
   font-size: 4rem;
-  background-color: #000000;
-  color: white;
 }
 
 #development img {
@@ -386,24 +391,23 @@ nav{
   height: auto;
 }
 
-.final-solution {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 #impact h1{
   font-size: 4rem;
-  background-color: #000000;
-  color: white;
 }
 
 #impact p{
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 2em;
   line-height: 1.7;
 }
 
 #references{
   margin-top: 4em;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
 }
 
 #references p, #references a{
@@ -413,10 +417,8 @@ nav{
 
 footer {
   padding: 1.5em;
-  background-color: black;
-  color: white;
   margin-top: 4em;
-  padding-bottom: 9em;
+  padding-bottom: 7em;
 }
 
 /* RESPONSIVE */
@@ -518,7 +520,7 @@ footer {
     font-size: 0.7rem;
   }
 
-  header h1{
+  header h1, footer h1{
     font-size: 1rem;
   }
 

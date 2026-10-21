@@ -360,14 +360,21 @@ input:checked + .slider::before {
     font-size: 1.5rem;
 }
 
+.title-dates {
+    margin-top: 1.5em;
+}
+
 .project-card {
     width: calc(70% + 6em);
 }
 
 .project-card {
+    display: block;
+    width: calc(56% + 6em);
     background-color: #F5F5F7;
     border-radius: 1.5em;
-    transition: 0.5s ease;
+    padding-bottom: 3em;
+    transition: scale 0.5s ease;
 }
 
 .project-card:hover {
@@ -375,22 +382,35 @@ input:checked + .slider::before {
 }
 
 .new-text {
+    overflow: hidden;
+    min-height: 0;
     text-align: left;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 1%;
-    margin-bottom: 4%;
+    margin: 0 3%;
 }
 
 .new-text p {
-    margin-top: 1.5%;
+    margin: 1.5% 0 0;
 }
 
 .project-thumb {
-    border: 1px solid black;
+    display: block;
     width: 95%;
-    margin-top: 3em;
+    margin: 3em auto 0;
+    border: 1px solid black;
     border-radius: 1.5em;
+}
+
+.reveal {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.5s ease, opacity 0.4s ease;
+}
+
+.project-card:hover .reveal,
+.project-card:focus-visible .reveal {
+    grid-template-rows: 1fr;
+    opacity: 1;
 }
 
 #contact {
@@ -477,7 +497,7 @@ footer {
 
 .footer-links {
     display: flex;
-    justify-content: space-between; /* 🔑 left & right */
+    justify-content: space-between;
     align-items: center;
     width: min(90%, 60rem);
     margin: 0 auto;
@@ -576,6 +596,9 @@ footer svg {
     .cursor {
         display: none;
     }
+    .reveal {
+        display: none;
+    }
 }
 
 @media (max-width: 706px) {
@@ -649,17 +672,18 @@ footer svg {
         right: -100%;
         z-index: 10;
         width: 250px;
-        background-color: #000000;
-        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        background-color: #F5F5F7;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.12);
         transition: 0.75s ease-out;
     }
 
     header a {
-        color: white;
+        color: black;
     }
 
-    header {
-        background-color: black;
+    .open-sidebar-button svg,
+    .close-sidebar-button svg {
+        fill: #000000;
     }
 
     #sidebar-active:checked ~ .links-container {
