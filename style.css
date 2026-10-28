@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: none;
 }
 
 html {
@@ -11,21 +10,6 @@ html {
 
 body {
     font-family: "Geist", sans-serif;
-}
-
-.cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(106, 106, 106, 0.6);
-    border-radius: 50%;
-    border: 1px solid white;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    transition: transform 0.1s linear;
 }
 
 a {
@@ -68,7 +52,7 @@ nav {
 }
  
 .nav-bar a:hover {
-    color: #111;
+    color: #181818;
 }
  
 /* checkbox stays keyboard-focusable but invisible */

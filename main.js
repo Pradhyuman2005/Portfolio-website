@@ -1,10 +1,3 @@
-const cursor = document.querySelector('.cursor');
-
-window.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-});
-
 const sidebarToggle = document.getElementById('sidebar-active');
 
 document.querySelectorAll('.links-container a').forEach(link => {
@@ -35,22 +28,3 @@ const grids = document.querySelectorAll('.project-grid');
             grids.forEach(grid => { grid.hidden = grid.id !== tab.dataset.target; });
         });
     });
-
-// To fix a browser load issue
-window.addEventListener('load', () => {
-    if (toggle.checked) {
-        webProjects.style.display = 'none';
-        uxProjects.style.display = 'block';
-        designLabel.style.backgroundColor = 'black';
-        designLabel.style.color = 'white';
-        webLabel.style.backgroundColor = 'white';
-        webLabel.style.color = 'black';
-    } else {
-        webProjects.style.display = 'flex';
-        uxProjects.style.display = 'none';
-        webLabel.style.backgroundColor = 'black';
-        webLabel.style.color = 'white';
-        designLabel.style.backgroundColor = 'white';
-        designLabel.style.color = 'black';
-    }
-});
