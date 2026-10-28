@@ -8,37 +8,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cursor"></div>
     <header>
-        <nav>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <a href="" class="brand">Praddy</a>
+    
+        <nav aria-label="Main">
+            <input type="checkbox" id="sidebar-active" aria-label="Toggle menu">
+    
+            <label for="sidebar-active" class="open-sidebar-button" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </label>
-            
+    
             <label id="overlay" for="sidebar-active"></label>
-            <ul class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button" aria-label="Close menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
-                <li class="nav-bar">
-                    <!-- <a href="#home">Home</a> -->
+    
+                <div class="nav-bar">
                     <a href="#portfolio">Portfolio</a>
                     <a href="https://github.com/Pradhyuman2005" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a href="https://drive.google.com/file/d/10rIeVBz1jAqMczM4RVPgqe17nAYUTpDO/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+                    <a href="https://drive.google.com/file/d/10rIeVBz1jAqMczM4RVPgqe17nAYUTpDO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
                     <a href="#contact">Contact</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section ID="home">
             <div class="intro-page">
-                <img class="img-1" src="Images/img-1.png" alt="Pradhyuman's Photo" width="400px">
+                <img class="img-1" src="Images/img-1.png" alt="Pradhyuman's Photo" width="344px">
                 <div class="home-para">
                     <div class="svg-wrapper">
                         <h1>Product Designer
