@@ -448,8 +448,8 @@ input:checked + .slider::before {
 #contact {
     background-color: #F3F3F3;
     text-align: left;
-    margin-top: 25%;
-    padding-bottom: 17%;
+    margin-top: 15%;
+    padding-bottom: 5%;
 }
 
 .contact-inner {
