@@ -103,7 +103,7 @@ h2 {
 }
 
 .smily path {
-    animation: draw 2.9s linear infinite;
+    animation: draw 2.7s linear infinite;
     opacity: 0;
 }
 
@@ -322,7 +322,7 @@ input:checked + .slider::before {
     padding-inline: var(--gutter, clamp(1.5rem, 9vw, 7rem));
     padding-bottom: 8rem;
     text-align: left;
-    margin-top: 30%;
+    margin-top: 24%;
 }
 
 #portfolio h1 {
