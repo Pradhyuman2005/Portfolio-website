@@ -410,7 +410,7 @@ input:checked + .slider::before {
 .project-thumb {
     display: block;
     width: 100%;
-    aspect-ratio: 18 / 9;
+    aspect-ratio: 19 / 9;
     object-fit: cover;
     transition: scale 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }

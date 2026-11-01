@@ -156,7 +156,7 @@ hr {
 
 .project-thumb {
     width: 100%;
-    aspect-ratio: 15 / 8;
+    aspect-ratio: 19 / 9;
     object-fit: cover;
 }
 
